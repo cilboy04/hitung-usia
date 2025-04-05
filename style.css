@@ -5,6 +5,7 @@ padding: 0px;
 
 
 .text {
+  font-size:2em;
   text-align: center;
   font-family: "Bungee Spice", sans-serif;
   font-weight: 400;
@@ -19,26 +20,31 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction:column;
-padding: 0 auto;
 gap:10px;
-height: 500px;
+height: 100vh;
+width: 100%;
 }
+
 
 #tahunLahir {
 background-color:blue;
-height:30px;
-width:35%;
+height:40px;
+width:40%;
 border-radius: 6px;
 color:white;
-padding: 6px;}
+text-align: center;
+font-size: 16px;
+font-weight: 600;
+}
 
 #btnCheck {
-height:30px;
-width:35%;
+height:45px;
+width:40%;
 background-color:#333333;
 color:white;
-border-radius:10px;
+border-radius:8px;
 cursor: pointer;
+font-size: 16px;
 }
 
 #btnCheck:hover {
@@ -64,8 +70,28 @@ input::-webkit-inner-spin-button {
 -webkit-appearance: none;
 margin:0;}
 
-input [type=number] {
--moz-appearance: textfield;}
 
 label {
 color: white;}
+
+@media only screen and (max-width: 476px) {
+  .text {
+    font-size: 2em;
+  }
+  label {
+    font-size: 1.2em;
+  }
+  #tahunLahir {
+    height: 35px;
+    width: 60%;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+  #btnCheck {
+    height: 36px;
+    width: 60%;
+    font-size: 15px;
+    border-radius: 10px;
+    font-size: medium;
+  }
+}
